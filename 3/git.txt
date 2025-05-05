@@ -1,0 +1,80 @@
+Here’s a step-by-step guide to create a GitHub account, set up Git, create a repository, and push your code to GitHub using Git commands:
+
+🔧 Step 1: Create a GitHub Account
+Go to https://github.com
+
+Click Sign Up
+
+Enter your email, password, and username
+
+Verify your account (CAPTCHA and email)
+
+Skip personalization if you want and proceed to your dashboard
+
+💻 Step 2: Install Git (if not already installed)
+Windows: Download from https://git-scm.com
+
+Linux: Run
+
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install git
+macOS: Use Homebrew
+
+bash
+Copy
+Edit
+brew install git
+🔐 Step 3: Set up Git (First Time Only)
+Open terminal or Git Bash and run:
+
+bash
+Copy
+Edit
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+📁 Step 4: Create a Git Repository and Push Code
+A. Create a directory for your project
+bash
+Copy
+Edit
+mkdir my-project
+cd my-project
+B. Initialize Git
+bash
+Copy
+Edit
+git init
+C. Create a file (e.g., index.html)
+bash
+Copy
+Edit
+echo "<h1>Hello GitHub</h1>" > index.html
+D. Add and Commit the File
+bash
+Copy
+Edit
+git add .
+git commit -m "Initial commit"
+☁️ Step 5: Create a New Repository on GitHub
+Go to GitHub > Click + > New repository
+
+Enter repository name (e.g., my-project)
+
+Set to Public or Private
+
+Do NOT initialize with a README
+
+Click Create repository
+
+🔗 Step 6: Link Local Repo to GitHub and Push
+Copy the remote URL GitHub gives you (e.g., https://github.com/username/my-project.git) and run:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/username/my-project.git
+git branch -M main
+git push -u origin main

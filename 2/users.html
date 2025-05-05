@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registered Users</title>
+</head>
+<body>
+  <h2>Registered Users</h2>
+  <table border="1" id="userTable">
+    <thead>
+      <tr><th>Name</th><th>Email</th><th>Password</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const tableBody = document.querySelector('#userTable tbody');
+
+    users.forEach(user => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${user.name}</td><td>${user.email}</td><td>${user.password}</td>`;
+      tableBody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
