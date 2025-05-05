@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { UserService } from '../../../../../user-auth-app-new/src/app/user.service';
+import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,4 +26,4 @@ export class LoginComponent {
             alert('Invalid Credentials!');
         }
     }
-} 
+}
