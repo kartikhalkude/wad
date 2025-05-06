@@ -1,0 +1,1 @@
+sudo dmesg -C && sudo journalctl --rotate && sudo journalctl --vacuum-time=1s && rm -f ~/.bash_history ~/.local/share/recently-used.xbel ~/.config/gtk-3.0/bookmarks
